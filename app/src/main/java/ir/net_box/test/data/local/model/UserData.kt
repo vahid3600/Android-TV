@@ -2,6 +2,7 @@ package ir.net_box.test.data.local.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 
 @Entity
 data class VideoEntity(
@@ -11,4 +12,4 @@ data class VideoEntity(
     val name: String,
     var description: String,
     var thumbnail: String?
-)
+):Serializable
