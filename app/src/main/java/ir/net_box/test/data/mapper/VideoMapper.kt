@@ -7,5 +7,6 @@ fun Video.toVideoEntity() = VideoEntity(
     videoId = id,
     name = name,
     description = description,
-    thumbnail = thumbnail
+    thumbnail = thumbnail,
+    link = fileSrc
 )

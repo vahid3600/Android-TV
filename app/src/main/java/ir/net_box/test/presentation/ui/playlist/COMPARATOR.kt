@@ -1,4 +1,4 @@
-package ir.net_box.test.presentation.ui
+package ir.net_box.test.presentation.ui.playlist
 
 import androidx.recyclerview.widget.DiffUtil
 import ir.net_box.test.data.local.model.VideoEntity

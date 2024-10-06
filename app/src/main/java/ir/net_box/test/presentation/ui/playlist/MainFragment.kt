@@ -1,4 +1,4 @@
-package ir.net_box.test.presentation.ui
+package ir.net_box.test.presentation.ui.playlist
 
 import android.content.Intent
 import android.os.Bundle

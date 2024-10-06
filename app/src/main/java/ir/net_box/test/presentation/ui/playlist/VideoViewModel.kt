@@ -1,4 +1,4 @@
-package ir.net_box.test.presentation.ui
+package ir.net_box.test.presentation.ui.playlist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

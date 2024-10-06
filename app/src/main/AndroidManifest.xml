@@ -33,6 +33,10 @@
             android:name=".presentation.ui.details.DetailsActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".presentation.ui.playback.PlaybackActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

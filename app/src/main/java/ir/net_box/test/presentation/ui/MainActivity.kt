@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import dagger.hilt.android.AndroidEntryPoint
 import ir.net_box.test.R
+import ir.net_box.test.presentation.ui.playlist.MainFragment
 
 @AndroidEntryPoint
 class MainActivity : FragmentActivity() {

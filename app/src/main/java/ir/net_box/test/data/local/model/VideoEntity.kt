@@ -11,5 +11,6 @@ data class VideoEntity(
     val videoId: Int,
     val name: String,
     var description: String,
-    var thumbnail: String?
+    var thumbnail: String?,
+    var link: String?
 ):Serializable

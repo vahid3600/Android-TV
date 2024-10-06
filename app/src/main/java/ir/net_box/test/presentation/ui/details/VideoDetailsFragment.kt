@@ -13,12 +13,15 @@ import androidx.leanback.widget.ArrayObjectAdapter
 import androidx.leanback.widget.ClassPresenterSelector
 import androidx.leanback.widget.DetailsOverviewRow
 import androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter
+import androidx.leanback.widget.OnActionClickedListener
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.SimpleTarget
 import com.bumptech.glide.request.transition.Transition
 import ir.net_box.test.R
 import ir.net_box.test.data.local.model.VideoEntity
 import ir.net_box.test.presentation.ui.MainActivity
+import ir.net_box.test.presentation.ui.details.DetailsActivity.Companion.VIDEO
+import ir.net_box.test.presentation.ui.playback.PlaybackActivity
 
 class VideoDetailsFragment : DetailsSupportFragment() {
 
@@ -111,6 +114,13 @@ class VideoDetailsFragment : DetailsSupportFragment() {
                 ContextCompat.getColor(it, R.color.selected_background)
         }
         detailsPresenter.isParticipatingEntranceTransition = true
+        detailsPresenter.onActionClickedListener = OnActionClickedListener { action ->
+            if (action.id == ACTION_WATCH_TRAILER) {
+                val intent = Intent(activity!!, PlaybackActivity::class.java)
+                intent.putExtra(VIDEO, mSelectedMovie)
+                startActivity(intent)
+            }
+        }
         mPresenterSelector.addClassPresenter(DetailsOverviewRow::class.java, detailsPresenter)
     }
 
